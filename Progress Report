@@ -1,0 +1,20 @@
+# Stage One (abstract)
+
+* we have 468 patients up until March, 2023
+* we extracted features including demographic data (age and sex), medical comorbidities (history of hypertension, history of heart failure, history of diabetes, etc.), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (smoking and obesity)
+* we performed external validation of HAVOC and Brown ESUS-AF risk scores
+* we built machine learning tree-based models including random forest classifier, extremely randomized trees classifier, gradient boosting classifier, and histogram gradient boosting classifier
+
+# Stage Two
+
+* we added more patients up until October, 2023
+* we plan to extract features including demographic data (age and sex), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (smoking and obesity)
+* we plan to extract dummy variables from medical comorbidities history and prescribed medicines history (different from stage one)
+* we plan to input the dummy variables into a pretrained Hypergraph Neural Networks, which outputs an embedding vector we plan to incorporate into our predictor space
+* we plan to build similar machine learning tree-based models
+* we plan to perform similar external validation of HAVOC and Brown ESUS-AF risk scores
+
+# Current Challenges
+
+* I am taking a careful approach in identifying the index ESUS date as well as the AF date for each patient
+* I am matching prescribed medicines history between Cerner and Epic EHR systems before extracting dummy variables 
