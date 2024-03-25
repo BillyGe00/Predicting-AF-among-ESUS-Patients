@@ -1,7 +1,7 @@
 # Stage One (abstract submission)
 
 * we have 468 patients up until March, 2023
-# exclusion criteria (1. patients with afib prior to index stroke; 2. patients with no follow-up hospital visits after index stroke)
+* exclusion criteria (1. patients with afib prior to index stroke; 2. patients with no follow-up hospital visits after index stroke)
 * we extracted features including demographic data (age and gender), medical comorbidities (history of hypertension, history of heart failure, history of diabetes, etc.), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (smoking and obesity)
 * we performed external validation of HAVOC and Brown ESUS-AF risk scores
 * we built machine learning tree-based models including random forest classifier, extremely randomized trees classifier, gradient boosting classifier, and histogram gradient boosting classifier
@@ -9,8 +9,8 @@
 # Stage Two
 
 * we have 510 patients up until December, 2023
-# study period: from 2010-01-01 to 2023-12-13 (earliest and latest index stroke event is 2015-11-01 and 2023-08-25; earliest and latest afib event is 2016-09-22 and 2023-11-14) 
-# exclusion criteria (1. patients with afib prior to index stroke; 2. patients with other stroke history within five years prior to index stroke identified in the study period)
+* study period: from 2010-01-01 to 2023-12-13 (earliest and latest index stroke event is 2015-11-01 and 2023-08-25; earliest and latest afib event is 2016-09-22 and 2023-11-14) 
+* exclusion criteria (1. patients with afib prior to index stroke; 2. patients with other stroke history within five years prior to index stroke identified in the study period)
 * we extracted features including demographic data (age, gender, height, weight), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (obesity)
 * we extracted dummy variables from medical comorbidities history and prescribed medicines history (different from stage one)
 * we input the dummy variables into a pretrained Hypergraph Neural Networks, which output an embedding vector we incorporated into our predictor space
@@ -21,13 +21,13 @@
 
 * we are currently in stage two
 * feature extraction is nearly complete, except for smoking
-# I need to have a better understanding about the embedding vectors
-# next step is modeling and external validation
+* I need to have a better understanding about the embedding vectors
+* next step is modeling and external validation
 
 # Current Challenges
 
 * smoking information is available is cdw flowsheet data, but not in epic flowsheet data
 * less than 182 out of 510 patients have smoking information available in cdw flowsheet
-# smoking shall be a prevalent information, but it is not ideal if we have to go into the clinical notes freetext to extract it
+* smoking shall be a prevalent information, but it is not ideal if we have to go into the clinical notes freetext to extract it
 * I am asking Rob for help with his past experience
 
