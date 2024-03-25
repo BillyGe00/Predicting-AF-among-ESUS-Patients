@@ -1,26 +1,33 @@
-# Stage One (abstract)
+# Stage One (abstract submission)
 
 * we have 468 patients up until March, 2023
-* we extracted features including demographic data (age and sex), medical comorbidities (history of hypertension, history of heart failure, history of diabetes, etc.), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (smoking and obesity)
+# exclusion criteria (1. patients with afib prior to index stroke; 2. patients with no follow-up hospital visits after index stroke)
+* we extracted features including demographic data (age and gender), medical comorbidities (history of hypertension, history of heart failure, history of diabetes, etc.), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (smoking and obesity)
 * we performed external validation of HAVOC and Brown ESUS-AF risk scores
 * we built machine learning tree-based models including random forest classifier, extremely randomized trees classifier, gradient boosting classifier, and histogram gradient boosting classifier
 
 # Stage Two
 
-* we added more patients up until October, 2023
-* we plan to extract features including demographic data (age and sex), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (smoking and obesity)
-* we plan to extract dummy variables from medical comorbidities history and prescribed medicines history (different from stage one)
-* we plan to input the dummy variables into a pretrained Hypergraph Neural Networks, which outputs an embedding vector we plan to incorporate into our predictor space
+* we have 510 patients up until December, 2023
+# study period: from 2010-01-01 to 2023-12-13 (earliest and latest index stroke event is 2015-11-01 and 2023-08-25; earliest and latest afib event is 2016-09-22 and 2023-11-14) 
+# exclusion criteria (1. patients with afib prior to index stroke; 2. patients with other stroke history within five years prior to index stroke identified in the study period)
+* we extracted features including demographic data (age, gender, height, weight), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (obesity)
+* we extracted dummy variables from medical comorbidities history and prescribed medicines history (different from stage one)
+* we input the dummy variables into a pretrained Hypergraph Neural Networks, which output an embedding vector we incorporated into our predictor space
 * we plan to build similar machine learning tree-based models
 * we plan to perform similar external validation of HAVOC and Brown ESUS-AF risk scores
 
 # Progress Update
 
 * we are currently in stage two
-* we have obtained all data from Rob
-* I have put together most of our features in stage two
+* feature extraction is nearly complete, except for smoking
+# I need to have a better understanding about the embedding vectors
+# next step is modeling and external validation
 
 # Current Challenges
 
-* I am taking a careful approach in identifying the index ESUS date as well as the AF date for each patient
-* I am matching prescribed medicines history between Cerner and Epic EHR systems before extracting dummy variables
+* smoking information is available is cdw flowsheet data, but not in epic flowsheet data
+* less than 182 out of 510 patients have smoking information available in cdw flowsheet
+# smoking shall be a prevalent information, but it is not ideal if we have to go into the clinical notes freetext to extract it
+* I am asking Rob for help with his past experience
+
