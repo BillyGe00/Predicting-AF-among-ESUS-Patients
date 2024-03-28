@@ -12,8 +12,9 @@
 * study period: from 2010-01-01 to 2023-12-13 (earliest and latest index stroke event is 2015-11-01 and 2023-08-25; earliest and latest afib event is 2016-09-22 and 2023-11-14) 
 * exclusion criteria (1. patients with afib prior to index stroke; 2. patients with other stroke history within five years prior to index stroke identified in the study period)
 * we extracted features including demographic data (age, gender, height, weight), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (obesity)
-* we extracted dummy variables from medical comorbidities history and prescribed medicines history (different from stage one)
-* we input the dummy variables into a pretrained Hypergraph Neural Networks, which output an embedding vector we incorporated into our predictor space
+* we extracted dummy variables from medical comorbidities history (2876) and prescribed medicines history (1293) (different from stage one)
+* we converted those dummy variables into dimension = 32 embedding vector via unsupervised deepwalk and autoencoder methods
+* we plan to convert those dummy variables into dimension = 32 embedding vector via supervised hypergraph model
 * we plan to build similar machine learning tree-based models
 * we plan to perform similar external validation of HAVOC and Brown ESUS-AF risk scores
 
@@ -21,13 +22,11 @@
 
 * we are currently in stage two
 * feature extraction is nearly complete, except for smoking
-* I need to have a better understanding about the embedding vectors
 * next step is modeling and external validation
 
 # Current Challenges
 
-* smoking information is available is cdw flowsheet data, but not in epic flowsheet data
-* less than 182 out of 510 patients have smoking information available in cdw flowsheet
+* smoking information is available in currently pulled cdw flowsheet data, but it is flawed (only 180 out of 510 patients have this data recorded) (Rob has confirmed that cdw did not do a good job in recording smoking information)
+* smoking information is available in epic data but it has not been pulled yet (Rob said that he needs a few days to work on it) (hopefully the data is high quality)
 * smoking shall be a prevalent information, but it is not ideal if we have to go into the clinical notes freetext to extract it
-* I am asking Rob for help with his past experience
-
+* if many patients do not have available smoking information, then there is a trade-off between including the feature and excluding it due to noise
