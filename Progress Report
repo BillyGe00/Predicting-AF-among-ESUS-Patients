@@ -21,7 +21,7 @@
 # Progress Update
 
 * we are currently in stage two
-* feature extraction is nearly complete, except for smoking
+* feature extraction is nearly complete, except for smoking and hypergraph model emebedding vector
 * next step is modeling and external validation
 
 # Current Challenges
