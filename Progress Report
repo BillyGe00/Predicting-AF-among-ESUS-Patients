@@ -22,12 +22,5 @@
 # Progress Update
 
 * we are currently in stage two
-* feature extraction is nearly complete, except for smoking feature extraction
+* feature extraction is complete
 * next step is modeling and external validation
-
-# Current Challenges
-
-* smoking information is available in currently pulled cdw flowsheet data, but it is flawed (only 180 out of 510 patients have this data recorded) (Rob has confirmed that cdw did not do a good job in recording smoking information)
-* smoking information is available in epic data but it has not been pulled yet (Rob said that he needs a few days to work on it) (hopefully the data is high quality)
-* smoking shall be a prevalent information, but it is not ideal if we have to go into the clinical notes freetext to extract it
-* if many patients do not have available smoking information, then there is a trade-off between including the feature and excluding it due to noise
