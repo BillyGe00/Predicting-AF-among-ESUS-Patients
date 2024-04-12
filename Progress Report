@@ -15,12 +15,13 @@
 * we also extracted medical comorbidities features (history of hypertension, diabetes, congestive heart failure, etc.) to build baseline ML models without embedding vector
 * we extracted dummy variables from medical comorbidities history (990) and prescribed medicines history (539) (different from stage one)
 * we converted those dummy variables into dimension = 32 embedding vector via unsupervised deepwalk and autoencoder methods
-* we converted those dummy variables into dimension = 32 embedding vector via supervised hypergraph model (pre-trained on a larger PSCI patient cohort and transfer learning to this AF project)
+* we converted those dummy variables into dimension = 32 embedding vector via supervised hypergraph model (pre-trained on a larger PSCI patient cohort and transfer learning + fine-tuning to/on this AF project)
+* we performed external validation of HAVOC, Brown ESUS-AF, CHA2DS2-VASc, and C2HEST risk scores (similar to stage one)
 * we plan to build machine learning tree-based models (similar to stage one)
-* we plan to perform external validation of HAVOC and Brown ESUS-AF risk scores (similar to stage one)
 
 # Progress Update
 
 * we are currently in stage two
 * feature extraction is complete
-* next step is modeling and external validation
+* external validation is complete
+* modeling is in progress
