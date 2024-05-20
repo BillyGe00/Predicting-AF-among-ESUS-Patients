@@ -11,7 +11,7 @@
 * we have 510 patients up until December, 2023
 * study period: from 2010-01-01 to 2023-12-13 (earliest and latest index stroke event is 2015-11-01 and 2023-08-25; earliest and latest afib event is 2016-09-22 and 2023-11-14) 
 * exclusion criteria (1. patients with afib prior to index stroke; 2. patients with other stroke history within five years prior to index stroke identified in the study period)
-* we extracted features including demographic data (age, gender, height, weight), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (obesity, smoking)
+* we extracted features including demographic data (age, gender), physical characteristics (height, weight), lab records (cholesterol, hemoglobin, glucose, red and white blood cell count, etc.), radiographic reports (electrocardiogram and echocardiogram), and other common risk factors (obesity, smoking)
 * we also extracted medical comorbidities features (history of hypertension, diabetes, congestive heart failure, etc.) to build baseline ML models without embedding vector
 * we extracted dummy variables from medical comorbidities history (990, 2742) and prescribed medicines history (539) (different from stage one)
 * we converted those dummy variables into dimension = 32 or 64 embedding vector via unsupervised deepwalk and autoencoder methods
