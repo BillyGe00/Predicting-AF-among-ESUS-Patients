@@ -10,6 +10,8 @@
 * gb.ipynb (gradient boosting model performance evaluation)
 * "fine-tuning scripts" folder (where I fine-tuned all of the random forest and gradient boosting models)
 * "hyperparameter_tuning_results" folder (where I stored all of the random forest and gradient boosting hyperparameter tuning results)
+* cleaned_PROMOTE_Yuzhang.ipynb (where I put together ICD and prescribed med dummy data for PROMOTE in order for Yuzhang to conduct transfer learning)
+* ESUS_AFIB_embedding_generation.ipynb (where I put together ICD and prescribed med dummy data for ESUS-AF in order to for Yuzhang to generate embedding vectors)
 
 ## Data
 
