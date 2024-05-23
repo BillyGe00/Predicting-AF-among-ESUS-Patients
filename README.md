@@ -1,6 +1,6 @@
 # Predicting-AF-among-ESUS-Patients
 
-This repository serves to track the progress of our ESUS-AF project. It includes a high-level research plan and up-to-date progress report.
+This repository serves to introduce as well as to track the progress of the ESUS-AF research project. It includes a high-level research plan and an up-to-date progress report.
 
 ## Aim One
 
