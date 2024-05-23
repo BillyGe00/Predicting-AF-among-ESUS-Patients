@@ -18,6 +18,7 @@
 * billy_updated_PROMOTE_feat_icd4.csv
 * hypergraph_input_af_icd4.csv
 * hypergraph_input_af_icd3.csv
+* "embeddings_20240520" folder
 
 ## Feature Extraction
 
