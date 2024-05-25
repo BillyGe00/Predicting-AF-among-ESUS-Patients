@@ -26,6 +26,11 @@
 
 ### patient cohort definition
 
+* “dr_nahab” folder
+* "DELTA" folder
+* Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DX_20231213.csv
+* Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_DX_20231213.csv
+
 ### demographics (race, ethnicity, gender, age)
 
 ### ICD
