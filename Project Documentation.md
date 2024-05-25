@@ -33,9 +33,18 @@
 
 ### demographics (race, ethnicity, gender, age)
 
+* Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DEMO_20231213.csv
+* Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_EPIC_DEMO_20231213.csv
+
 ### ICD
 
+* Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DX_20231213.csv
+* Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_DX_20231213.csv
+
 ### prescribed med
+
+* Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_PRESCR_MED_20231213.csv
+* Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Prescr_Meds_20231213.csv
 
 ### ECHO
 
@@ -43,8 +52,12 @@
 
 ### labs
 
-### physical characteristics (height, weight)
+* Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_LABS_20231213.csv
+* Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Labs_20231213.csv
 
-### other common risk factors (smoking, obesity)
+### other common risk factors (height, weight, smoking, obesity)
 
+* Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_Flowsheet_20231213.csv
+* Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Flowsheet_20231213.csv
+* Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Smoking_History_20240402.csv
 
