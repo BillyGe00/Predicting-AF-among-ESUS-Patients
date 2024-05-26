@@ -31,20 +31,26 @@
 * Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DX_20231213.csv
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_DX_20231213.csv
 
+Communicate with Dr. Nahab and Rob regarding how to expand our existing patient cohort.
+
 ### demographics (race, ethnicity, gender, age)
 
 * Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DEMO_20231213.csv
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_EPIC_DEMO_20231213.csv
 
-### ICD
+### ICD comorbidities
 
 * Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DX_20231213.csv
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_DX_20231213.csv
+
+ICD-Mappings API
 
 ### prescribed med
 
 * Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_PRESCR_MED_20231213.csv
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Prescr_Meds_20231213.csv
+
+How to merge and standardize CDW and EPIC prescribed med data?
 
 ### ECHO
 
