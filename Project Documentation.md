@@ -52,6 +52,7 @@ Key Notes in Data Cleaning
 
 * Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DX_20231213.csv
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_DX_20231213.csv
+* /labs/hulab/PROMOTE_EHR_data/DS3515_PROMOTE/All_Patient_Encounters/billy_cleaned_All_Encounters.csv
 
 Key Notes in Data Cleaning
 * Always convert orginal, raw ICD codes to a standard format. I recommend the ICD-Mappings API: https://github.com/snovaisg/ICD-Mappings.
@@ -61,6 +62,7 @@ Key Notes in Data Cleaning
 
 * Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_PRESCR_MED_20231213.csv
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Prescr_Meds_20231213.csv
+* /labs/hulab/PROMOTE_EHR_data/DS3515_PROMOTE/All_Patient_Encounters/DS3515_Prescribed_Meds_All_Encounters.csv
 
 Key Notes in Data Cleaning
 * The difference in prescribed med data record between CDW and EPIC is huge. It was difficult for me to find a method to standardize them.
