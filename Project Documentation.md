@@ -97,7 +97,7 @@ Key Notes in Data Cleaning
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Labs_20231213.csv
 
 Key Notes in Data Cleaning
-* blabla...
+* CDW and EPIC has different conventions in lab test names. Please make sure to standardize them before feature extraction.
 
 ### other common risk factors (height, weight, smoking, obesity)
 
