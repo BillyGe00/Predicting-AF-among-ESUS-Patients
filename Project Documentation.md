@@ -74,7 +74,22 @@ Other Key Notes
 
 ### ECHO
 
+* echo_20240229.xlsx
+* echo_example.pdf
+
+Key Notes in Data Cleaning
+* The above excel file is the raw ECHO data file that I manually collected. By mannually collected, here is the process: after finding the index ESUS stroke event for each patient, I go into the EHR systems (PowerChart and Epic) to look for ECHO record closest to the index ESUS stroke event date. I have attached an example pdf ECHO file to demonstrate.
+* In ESUS_AFIB_latest_data_20231213.ipynb, I extracted 5 ECHO features in 510_ESUS_AF_feat.csv after I processed the raw ECHO data file. For example, "BSA", "LA Vol MOD A2C", and "LA Vol MOD A4C" columns in raw data serve the purpose to generate the LAVI feature, because not every ECHO record contains LAVI information.
+* There is a lot of missing values, where a patient did not have ECHO record within 6 months prior to index ESUS stroke event.
+
 ### ECG
+
+* ecg_20240304.xlsx
+* ecg_example.png
+
+Key Notes in Data Cleaning
+* The above excel file is the raw ECG data file that I manually collected. By mannually collected, here is the process: after finding the index ESUS stroke event for each patient, I go into the EHR systems (PowerChart and Epic) to look for ECG record closest to the index ESUS stroke event date. I have attached an example png ECG file to demonstrate.
+* There is a lot of missing values, where a patient did not have ECG record within 6 months prior to index ESUS stroke event.
 
 ### labs
 
