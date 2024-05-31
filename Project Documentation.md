@@ -48,6 +48,9 @@ Key Notes in Data Cleaning
 * According to US Census Bureau, ethnicity has two categories: Hispanic or Latino and Not Hispanic or Latino.
 * According to US Census Bureau, race has six categories: White, Black or African American, American Indian or Alaska Native, Asian, Native Hawaiian or Other Pacific Islander, and More Than One Race.
 
+Other Key Notes
+* The race and ethnicity features have already been extracted in 510_ESUS_AF_feat.csv, but they are not used in any models. The purpose of extracting them is to do more detailed model performance evaluations in the future.
+
 ### ICD comorbidities
 
 * Latest_data_Billy_20231213/CDW_Output/DS3465_CDW_DX_20231213.csv
@@ -79,7 +82,7 @@ Other Key Notes
 
 Key Notes in Data Cleaning
 * The above excel file is the raw ECHO data file that I manually collected. By mannually collected, here is the process: after finding the index ESUS stroke event for each patient, I go into the EHR systems (PowerChart and Epic) to look for ECHO record closest to the index ESUS stroke event date. I have attached an example pdf ECHO file to demonstrate.
-* In ESUS_AFIB_latest_data_20231213.ipynb, I extracted 5 ECHO features in 510_ESUS_AF_feat.csv after I processed the raw ECHO data file. For example, "BSA", "LA Vol MOD A2C", and "LA Vol MOD A4C" columns in raw data serve the purpose to generate the LAVI feature, because not every ECHO record contains LAVI information.
+* In ESUS_AFIB_latest_data_20231213.ipynb, I extracted 5 ECHO features in 510_ESUS_AF_feat.csv after I processed the raw ECHO data file. For example, "BSA", "LA Vol MOD A2C", and "LA Vol MOD A4C" columns in raw data serve the purpose to generate the LAVI feature, because not every ECHO record contains LAVI information directly.
 * There is a lot of missing values, where a patient did not have ECHO record within 6 months prior to index ESUS stroke event.
 
 ### ECG
@@ -111,5 +114,5 @@ Key Notes in Data Cleaning
 * ECHO raw data collection and the flowsheet data have some shared features. Please take advantage of both data by combining them.
 
 Other Key Notes
-* EPIC did a much better job in recording smoke data than CDW.
+* EPIC did a much better job in recording smoke data than CDW. Please refer to my 4-step smoke feature extraction approach in ESUS_AFIB_latest_data_20231213.ipynb.
 
