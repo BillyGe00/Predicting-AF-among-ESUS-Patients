@@ -97,7 +97,7 @@ Key Notes in Data Cleaning
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Labs_20231213.csv
 
 Key Notes in Data Cleaning
-* CDW and EPIC has different conventions in lab test names. Please make sure to standardize them before feature extraction.
+* CDW and EPIC have different conventions in lab test names. Please make sure to standardize them before feature extraction.
 
 ### other common risk factors (height, weight, smoking, obesity)
 
@@ -106,5 +106,10 @@ Key Notes in Data Cleaning
 * Latest_data_Billy_20231213/Epic_Caboodle_Output/DS3465_Epic_Smoking_History_20240402.csv
 
 Key Notes in Data Cleaning
-* blabla...
+* Data that contains these 4 features in CDW is the flowsheet. However, in EPIC, while height, weight, and obesity featuress are also in the flowsheet data, the smoking feature is in its own data file.
+* CDW and EPIC has different conventions in unit of measurements. Please make sure to standardize them before feature extraction.
+* ECHO raw data collection and the flowsheet data have some shared features. Please take advantage of both data by combining them.
+
+Other Key Notes
+* EPIC did a much better job in recording smoke data than CDW.
 
