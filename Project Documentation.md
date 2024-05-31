@@ -88,7 +88,7 @@ Key Notes in Data Cleaning
 * ecg_example.png
 
 Key Notes in Data Cleaning
-* The above excel file is the raw ECG data file that I manually collected. By mannually collected, here is the process: after finding the index ESUS stroke event for each patient, I go into the EHR systems (PowerChart and Epic) to look for ECG record closest to the index ESUS stroke event date. I have attached an example png ECG file to demonstrate.
+* The above excel file is the raw ECG data file that I manually collected. By mannually collected, here is the process: after finding the index ESUS stroke event for each patient, I go into the EHR systems (PowerChart and Epic) to look for ECG record closest to the index ESUS stroke event date. I have attached an example png ECG image to demonstrate.
 * There is a lot of missing values, where a patient did not have ECG record within 6 months prior to index ESUS stroke event.
 
 ### labs
