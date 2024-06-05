@@ -16,4 +16,4 @@ Develop understandings about different embedding vector generation methods, incl
 
 ## Aim Four
 
-Develop understandings about tbe role of individual data compoenents in predicting AF, including ICD, labs, ECG, and ECHO.
+Develop understandings about tbe importance of individual data compoenents in predicting AF, including ICD, labs, ECG, and ECHO.
